@@ -23,10 +23,10 @@ class MastermindGame:
 
     def play(self):
         print(f"Playing Mastermind with {len(self.colors)} colors and {self.positions} positions")
-        print([random.choice(self.colors) for _ in range(self.positions)])
         while True:
             user_guess = input("What is your guess?: ")
             self.rounds += 1
+            # print(self.solution) solution answer if you want to see solution command out
 
             feedback = self.provide_feedback(user_guess)
 
