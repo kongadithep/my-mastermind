@@ -26,8 +26,8 @@ class MastermindGame:
         while True:
             user_guess = input("What is your guess?: ")
             self.rounds += 1
-            # print(self.solution) solution answer if you want to see solution command out
-
+            # solution answer if you want to see solution command out print(self.solution)
+            # print(self.solution)
             feedback = self.provide_feedback(user_guess)
 
             print(f"Your guess is: {user_guess}")
